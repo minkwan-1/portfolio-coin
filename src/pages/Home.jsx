@@ -1,7 +1,8 @@
 import React from "react";
+import { Box } from "@mui/material";
 
 const Home = () => {
-  return <div>홈페이지</div>;
+  return <Box>홈페이지</Box>;
 };
 
 export default Home;
