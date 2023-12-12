@@ -1,18 +1,21 @@
 import React from "react";
-import { Box, Container } from "@mui/material";
+import { Box, Container, useTheme } from "@mui/material";
 
 import { Logo, AppMenu, SearchInput, LoginButton, SignupButton } from "./index";
 
 const Appbar = () => {
+  const theme = useTheme();
   return (
     <Box
       position="sticky"
       sx={{
         zIndex: 999,
         top: 0,
-        backgroundColor: "#0d1521",
         height: "100px",
         width: "100%",
+        backgroundColor: theme.palette.mode === "dark" ? "#121212" : "",
+        borderBottom:
+          theme.palette.mode === "dark" ? "1px solid white" : "none",
       }}
     >
       <Container

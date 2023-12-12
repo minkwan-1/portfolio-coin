@@ -17,7 +17,7 @@ export const footerSupport = [
 ];
 
 export const footerSocials = [
-  <Typography sx={{ color: "#60667a" }}>X,Twitter</Typography>,
+  <Typography sx={{ color: "#60667a" }}>X(Twitter)</Typography>,
   <Typography sx={{ color: "#60667a" }}>Community</Typography>,
   <Typography sx={{ color: "#60667a" }}>Telegram</Typography>,
   <Typography sx={{ color: "#60667a" }}>Instagram</Typography>,

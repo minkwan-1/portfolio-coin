@@ -1,17 +1,18 @@
 import React from "react";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Typography, useTheme } from "@mui/material";
 import { footerMenuList } from "./footerMenu";
 import { Logo } from "../appbar";
 
 const Footer = () => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
-        backgroundColor: "#0d1521",
         color: "white",
         height: "100%",
         width: "100%",
         minWidth: "100%",
+        borderTop: theme.palette.mode === "dark" ? "1px solid white" : "none",
       }}
     >
       <Container
@@ -77,7 +78,7 @@ const Footer = () => {
         >
           {/* copyright */}
           <Box sx={{ fontWeight: "bolder", color: "#60667a" }}>
-            © 2023 WonCoin. All rights reserved
+            © 2023 WONCOIN. All rights reserved
           </Box>
           {/* <Box sx={{ display: "flex", columnGap: "5px" }}>
             <Typography>Download on the App Store</Typography>

@@ -8,6 +8,7 @@ const Logo = () => {
     <Button
       onClick={() => {
         navigate("/");
+        window.scrollTo(0, 0);
       }}
       sx={{ color: "white", fontWeight: "bolder" }}
     >
