@@ -77,8 +77,7 @@ export default function StickyHeadTable() {
       sx={{
         width: "100%",
         overflow: "hidden",
-        backgroundColor: "#0d1521",
-        border: theme.palette.mode === "dark" ? "1px solid white" : "none",
+        border: `1px solid ${theme.palette.divider}`,
       }}
     >
       <TableContainer sx={{ maxHeight: 440 }}>
@@ -108,7 +107,7 @@ export default function StickyHeadTable() {
                         <TableCell
                           key={column.id}
                           align={column.align}
-                          style={{ color: "white" }}
+                          sx={{ backgroundColor: "background.auxiliary" }}
                         >
                           {column.format && typeof value === "number"
                             ? column.format(value)
@@ -123,7 +122,7 @@ export default function StickyHeadTable() {
         </Table>
       </TableContainer>
       <TablePagination
-        // style={{ backgroundColor: "#f0f0f0" }}
+        sx={{ backgroundColor: "background.default" }}
         rowsPerPageOptions={[10, 25, 100]}
         component="div"
         count={rows.length}

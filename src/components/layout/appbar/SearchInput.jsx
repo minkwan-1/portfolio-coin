@@ -2,6 +2,7 @@ import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import { Box, InputBase } from "@mui/material";
+import { useTheme } from "@emotion/react";
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
   padding: theme.spacing(0, 2),
@@ -27,19 +28,17 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const SearchInput = () => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
         position: "relative",
+        border: `1px solid ${theme.palette.divider}`,
         borderRadius: (theme) => theme.shape.borderRadius,
         backgroundColor: (theme) => alpha(theme.palette.common.white, 0.15),
         "&:hover": {
           backgroundColor: (theme) => alpha(theme.palette.common.white, 0.25),
         },
-        marginRight: (theme) => theme.spacing(2),
-        marginLeft: 0,
-        width: { sm: "auto", sx: "100%" },
-        marginLeft: { sm: 5 },
       }}
     >
       <SearchIconWrapper>

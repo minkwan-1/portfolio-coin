@@ -1,29 +1,29 @@
 import { Typography } from "@mui/material";
 
 export const footerProducts = [
-  <Typography sx={{ color: "#60667a" }}>ChatGPT Plugin</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Blockchain Explorer</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Crypto API</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Crypto Indices</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Doodles</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Sitemap</Typography>,
+  <Typography sx={{ color: "text.primary" }}>ChatGPT Plugin</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Blockchain Explorer</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Crypto API</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Crypto Indices</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Doodles</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Sitemap</Typography>,
 ];
 
 export const footerSupport = [
-  <Typography sx={{ color: "#60667a" }}>Request Form</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Contact Support</Typography>,
-  <Typography sx={{ color: "#60667a" }}>FAQ</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Glossary</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Request Form</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Contact Support</Typography>,
+  <Typography sx={{ color: "text.primary" }}>FAQ</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Glossary</Typography>,
 ];
 
 export const footerSocials = [
-  <Typography sx={{ color: "#60667a" }}>X(Twitter)</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Community</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Telegram</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Instagram</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Facebook</Typography>,
-  <Typography sx={{ color: "#60667a" }}>Reddit</Typography>,
-  <Typography sx={{ color: "#60667a" }}>LinkedIn</Typography>,
+  <Typography sx={{ color: "text.primary" }}>X(Twitter)</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Community</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Telegram</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Instagram</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Facebook</Typography>,
+  <Typography sx={{ color: "text.primary" }}>Reddit</Typography>,
+  <Typography sx={{ color: "text.primary" }}>LinkedIn</Typography>,
 ];
 
 export const footerMenuList = {

@@ -4,16 +4,21 @@ import { useNavigate } from "react-router-dom";
 
 const Logo = () => {
   const navigate = useNavigate();
+
   return (
     <Button
       onClick={() => {
         navigate("/");
         window.scrollTo(0, 0);
       }}
-      sx={{ color: "white", fontWeight: "bolder" }}
     >
-      <Typography variant="h6" noWrap component="div">
-        WonCoin
+      <Typography
+        sx={{
+          color: "text.secondary",
+          fontWeight: "bolder",
+        }}
+      >
+        WONCOIN
       </Typography>
     </Button>
   );

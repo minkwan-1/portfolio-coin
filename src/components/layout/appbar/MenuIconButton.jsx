@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const MenuIconButton = () => {
+const MenuIconButton = ({ toggleBoxVisibility }) => {
   return (
     <Box>
       <IconButton
@@ -11,6 +11,7 @@ const MenuIconButton = () => {
         color="inherit"
         aria-label="open drawer"
         sx={{ mr: 2, border: "1px solid white" }}
+        onClick={toggleBoxVisibility}
       >
         <MenuIcon />
       </IconButton>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 import { menuList } from "./menuList";
 
@@ -14,7 +14,9 @@ const AppMenu = () => {
       }}
     >
       {menuList?.map((menu) => (
-        <Button key={menu?.name}>{menu?.name}</Button>
+        <Button key={menu?.name} sx={{ color: "action.active" }}>
+          <Typography sx={{ fontWeight: "bolder" }}>{menu?.name}</Typography>
+        </Button>
       ))}
     </Box>
   );

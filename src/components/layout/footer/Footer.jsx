@@ -1,18 +1,16 @@
 import React from "react";
-import { Box, Container, Typography, useTheme } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { footerMenuList } from "./footerMenu";
 import { Logo } from "../appbar";
 
 const Footer = () => {
-  const theme = useTheme();
   return (
     <Box
       sx={{
-        color: "white",
+        color: "background.default",
         height: "100%",
         width: "100%",
         minWidth: "100%",
-        borderTop: theme.palette.mode === "dark" ? "1px solid white" : "none",
       }}
     >
       <Container
@@ -42,7 +40,13 @@ const Footer = () => {
           >
             {/* Products */}
             <Box>
-              <Typography sx={{ fontWeight: "bolder", marginBottom: "10px" }}>
+              <Typography
+                sx={{
+                  fontWeight: "bolder",
+                  marginBottom: "10px",
+                  color: "text.secondary",
+                }}
+              >
                 Products
               </Typography>
               {footerMenuList?.footerProducts.map((elem, idx) => (
@@ -51,7 +55,13 @@ const Footer = () => {
             </Box>
             {/* Support */}
             <Box>
-              <Typography sx={{ fontWeight: "bolder", marginBottom: "10px" }}>
+              <Typography
+                sx={{
+                  fontWeight: "bolder",
+                  marginBottom: "10px",
+                  color: "text.secondary",
+                }}
+              >
                 Support
               </Typography>
               {footerMenuList?.footerSupport.map((elem, idx) => (
@@ -60,7 +70,13 @@ const Footer = () => {
             </Box>
             {/* Socials */}
             <Box>
-              <Typography sx={{ fontWeight: "bolder", marginBottom: "10px" }}>
+              <Typography
+                sx={{
+                  fontWeight: "bolder",
+                  marginBottom: "10px",
+                  color: "text.secondary",
+                }}
+              >
                 Socials
               </Typography>
               {footerMenuList?.footerSocials.map((elem, idx) => (
@@ -77,13 +93,9 @@ const Footer = () => {
           }}
         >
           {/* copyright */}
-          <Box sx={{ fontWeight: "bolder", color: "#60667a" }}>
+          <Box sx={{ fontWeight: "bolder", color: "text.secondary" }}>
             © 2023 WONCOIN. All rights reserved
           </Box>
-          {/* <Box sx={{ display: "flex", columnGap: "5px" }}>
-            <Typography>Download on the App Store</Typography>
-            <Typography>GET IT ON Google Play</Typography>
-          </Box> */}
         </Box>
       </Container>
     </Box>
