@@ -1,6 +1,14 @@
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Home, LoginPage, SignupPage } from "./pages";
+import {
+  Home,
+  LoginPage,
+  SignupPage,
+  OverviewPage,
+  NewsPage,
+  DetailPage,
+  MyPage,
+} from "./pages";
 
 export default function App() {
   return (
@@ -8,6 +16,10 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
+      <Route path="/overview" element={<OverviewPage />} />
+      <Route path="/news" element={<NewsPage />} />
+      <Route path="/detail" element={<DetailPage />} />
+      <Route path="/my" element={<MyPage />} />
     </Routes>
   );
 }

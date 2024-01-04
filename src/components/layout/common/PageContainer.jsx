@@ -1,4 +1,3 @@
-import { useTheme } from "@mui/material";
 import Appbar from "../appbar/Appbar";
 import Footer from "../footer/Footer";
 import { Box } from "@mui/material";
