@@ -24,12 +24,7 @@ export default function App() {
   );
 }
 
-// 1. table tag 확인, 정리(MDN or Blog)
-// 2. material table v2
-
-// 3. dark mode 컬러 정리
-// 4. Embla Carousel
-
-// 5. API, RESTful API TIL 정리
-// 6. http method(http protocol) 정리
-// 7. fetch & axios
+// 1. 로그인 사인업 뷰 완성
+// 2. 통신 데이터 state로 받아놓기
+// 3. AWS 아이디 만들기(cognito)
+// 4. 정보처리기사

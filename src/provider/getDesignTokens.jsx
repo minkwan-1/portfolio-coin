@@ -18,6 +18,6 @@ export const getDesignTokens = (mode) => ({
       auxiliary: mode === "dark" ? "#31415C" : "#E9EDF2",
     },
     // Divider
-    divider: mode === "dark" ? "#31415C" : "#D2DCE6",
+    divider: mode === "dark" ? "#121212" : "#D2DCE6",
   },
 });
